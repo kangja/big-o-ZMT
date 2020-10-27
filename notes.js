@@ -17,7 +17,8 @@ const nemo = ["nemo"];
 
 function findNemo(array) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === "nemo") {
+    if (array[i] === "nemo") { //array[i] equals array[1], which equals array[0] because it's 0<array.length. (array.length=1). 
+    //if array[0] == "nemo".
       console.log("Found NEMO!")
     }
   }
@@ -25,3 +26,9 @@ function findNemo(array) {
 
 // findNemo(nemo);
 // Found NEMO!
+
+//this is our instruction we're giving our computer to find Nemo.
+//runtime = how long it takes to fun a certain problem through a function or a task.  
+//how can we measure the big o or the efficiency of this code?
+//big o allows use to measure scalability.
+
