@@ -9,5 +9,19 @@
 //What is a good code?
 //There are two main things we talk about when we say this is good code.
 //1. Readable: is your code generally clean? Can others understand your code?
-//2. Scalable: 
+//2. Scalable: big-o notation is what allows us to measure this idea of scalable. Code that can scale.  
  
+//There are efficient and inefficient ways to give instructions. 
+
+const nemo = ["nemo"];
+
+function findNemo(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "nemo") {
+      console.log("Found NEMO!")
+    }
+  }
+}
+
+// findNemo(nemo);
+// Found NEMO!
