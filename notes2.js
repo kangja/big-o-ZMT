@@ -251,5 +251,13 @@ findNemo(large);
 
 //What did we just see here?
 //we see that as our input grew, our function find Nemo became slower, slower, and slower. Our runtime how long it takes to run a certain problem through a function increased.
-//here's a problem. if you take this code and run it on your computer, your time will be different than mine. You are going to get frustrated because every time you're on this code, we get different time results. It might be a lot faster or a lot slower. 
+//here's a problem. if you take this code and run it on your computer, your time will be different than mine. You are going to get frustrated because every time you're on this code, we get different time results. It might be a lot faster or a lot slower. The speed depends on how powerful the CPU in the computer is; what other programs are running on your computer, what programming languages you are using, and many other factors. So there is all these factors who play here in our run time. 
 
+//How can we determine who has a better code?
+//this is very common in the computing world. We code on our laptops/computers, but that code doesn't necessarily run on those devices. If we have something like a server, we may have that code run somewhere else on a different computer around the world. So how can we make sure that there is a way for us to measure in terms of efficiency what is a good code and what is bad code. And what is a code that can scale that as the number of arrays or inputs increases, it doesn't constantly slow down more and more.
+
+//Big o notation is the language we use for talking about how long an algorithm takes to run. 
+
+//we can compare two different algorithms or in this case, functions. Using Big O, which one is better than the other when it comes to scale regardless of our computer differences. 
+
+//And we can measure big o like the image. 
