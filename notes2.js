@@ -1,16 +1,16 @@
-// const nemo = ["nemo"];
+const nemo = ["nemo"];
 const performance = require('perf_hooks').performance;
 
-// function findNemo(array) {
-//   let t0 = performance.now();
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === "nemo") {
-//       console.log("Found NEMO!")
-//     }
-//   }
-//   let t1 = performance.now();
-//   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
-// }
+function findNemo(array) {
+  let t0 = performance.now();
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "nemo") {
+      console.log("Found NEMO!")
+    }
+  }
+  let t1 = performance.now();
+  console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
+}
 
 // findNemo(nemo);
 // Found NEMO!
@@ -38,7 +38,7 @@ function findNemo(array) {
   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
 }
 
-findNemo(everyone);
+// findNemo(everyone);
 // Found NEMO!
 // Call to find nem took 9.921467006206512 miliseconds
 
@@ -48,9 +48,9 @@ findNemo(everyone);
 
 
 //LET'S DO A FUN LITTLE TRICK HERE IN JAVASCRIPT. 
-// const nemo = ["nemo"];
-// const everyone = ["dory", "bruce", "marlin", "nemo", "gill", "bloat", "nigel", "squirt", "darla", "hank"];
-// const large = new Array(100).fill("nemo");
+const nemo = ["nemo"];
+const everyone = ["dory", "bruce", "marlin", "nemo", "gill", "bloat", "nigel", "squirt", "darla", "hank"];
+const large = new Array(100).fill("nemo");
 // console.log(large)
 // [
 //   'nemo', 'nemo', 'nemo', 'nemo', 'nemo', 'nemo', 'nemo',
@@ -71,16 +71,16 @@ findNemo(everyone);
 // ]
 //we can create a large array and we can create a meassive array by just saying new Array. And we will give it a hundred items and this hundred items in the array, we will fill it with "nemo" a hundred times. This will create an array that has Nemo a hundred times. 
 
-// function findNemo(array) {
-//   let t0 = performance.now();
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === "nemo") {
-//       console.log("Found NEMO!")
-//     }
-//   }
-//   let t1 = performance.now();
-//   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
-// }
+function findNemo(array) {
+  let t0 = performance.now();
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "nemo") {
+      console.log("Found NEMO!")
+    }
+  }
+  let t1 = performance.now();
+  console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
+}
 
 // findNemo(large);
 // Found NEMO!
@@ -188,18 +188,18 @@ findNemo(everyone);
 //it has found Nemo a hundred times because we just filled it with Nemo and it took miliseconds. 
 
 
-// const large = new Array(1000).fill("nemo");
+const large = new Array(1000).fill("nemo");
 
-// function findNemo(array) {
-//   let t0 = performance.now();
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === "nemo") {
-//       console.log("Found NEMO!")
-//     }
-//   }
-//   let t1 = performance.now();
-//   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
-// }
+function findNemo(array) {
+  let t0 = performance.now();
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "nemo") {
+      console.log("Found NEMO!")
+    }
+  }
+  let t1 = performance.now();
+  console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
+}
 
 // findNemo(large);
 // Call to find nem took 101.40273702144623 miliseconds
@@ -210,18 +210,18 @@ findNemo(everyone);
 
 //What if we do something BIGGER?
 //what if we had a massive array of 10,000. 
-// const large = new Array(10000).fill("nemo");
+const large = new Array(10000).fill("nemo");
 
-// function findNemo(array) {
-//   let t0 = performance.now();
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === "nemo") {
-//       console.log("Found NEMO!")
-//     }
-//   }
-//   let t1 = performance.now();
-//   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
-// }
+function findNemo(array) {
+  let t0 = performance.now();
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "nemo") {
+      console.log("Found NEMO!")
+    }
+  }
+  let t1 = performance.now();
+  console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
+}
 
 // findNemo(large);
 // Call to find nem took 451.6171290278435 miliseconds. It's pretty fast. 
@@ -243,7 +243,7 @@ function findNemo(array) {
   console.log("Call to find nem took " + (t1 - t0) + " miliseconds");
 }
 
-findNemo(large);
+// findNemo(large);
 // Call to find nem took 2246.377018034458 miliseconds
 //you saw that delay and how long that took. 
 
@@ -261,5 +261,14 @@ findNemo(large);
 //we can compare two different algorithms or in this case, functions. Using Big O, which one is better than the other when it comes to scale regardless of our computer differences. 
 
 //And we can measure big o like the image(refer to the image). 
+
+//when we talk about big o and scalability of code, we simply mean when we grow bigger and bigger with our input, how much does the algorithm or function slow down? The graph is saying that as more elements(example: arrays, characters, strings) increase, how many more operations do we have to do? That's all it is
+
+//This is what we call algorithmic efficiency. Big-O allows us to explain this concept.
+//Remember how in our function, we initially had an array of just one, which was "nemo" so that is the number of elements(inputs) in a function. But then as we increase that array to have more characters and then we created that massive array of 100,000 nemos, so as that increases you saw that the number of operations or the number of things we DO in the loop increased over and over. And different functions have different big-o complexities. That is these number of operations can increase really really fast like O(n!), which is not good. It's horrible. Things that are quite good actually don't increase as much. 
+
+//Again, when we talk about Big O and scalability of code, we simply mean when we grow bigger and bigger with our input, how much does the algorithm slow down. The less it slows down or the slower it slows down, the better it is. 
+
+//Therefore, instead of using performance.now and using time to measure the efficiency of our function, we could just calculate how many operations a computer has to perform because each operation takes time on a computer. So Big O allows us and concerns us with how many steps it takes in a function. 
 
 
