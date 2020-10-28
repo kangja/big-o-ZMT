@@ -260,4 +260,6 @@ findNemo(large);
 
 //we can compare two different algorithms or in this case, functions. Using Big O, which one is better than the other when it comes to scale regardless of our computer differences. 
 
-//And we can measure big o like the image. 
+//And we can measure big o like the image(refer to the image). 
+
+
