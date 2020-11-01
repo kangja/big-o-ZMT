@@ -19,3 +19,4 @@ function anotherFunChallenge(input) {
 } 
 
 //Our BIG O is O(4 + 5n). We have 4 constant times and then 5 things that we are doing n times! Let's start to figure out how we can simplify things for us so that we're not doing this mathematical step by step count. 
+
