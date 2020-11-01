@@ -25,4 +25,8 @@ function logFirstTwoBxes(boxes) {
 // 0
 // 1
 
-//Each time this function runs, two operations. So this function in total is actually running O(2) operation every time. No matter how big the boxes get, the number of operations here is going to be 2!. When it comes to constant time, we don't care if it's O(1), O(2), O(3), or even O(100). We round this down to simply saying O(1). That is we have constant time. 
+//Each time this function runs, two operations. So this function in total is actually running O(2) operation every time. No matter how big the boxes get, the number of operations here is going to be 2!. When it comes to constant time, we don't care if it's O(1), O(2), O(3), or even O(100). We round this down to simply saying O(1). That is we have constant time. It's a falt line in terms of scalability. It doesn't matter how big our inputs are, we're always going to do the constnat amount of time on a function. Keep in mind: Inputs can be any type of data. Not just arrays. O(1) is excellent. We love O(1) because it's very scalable. It doesn't matter how many elements we have, it's going to run the same. Predictability when it comes to computing is very nice and O(1) is definitely excellent. 
+
+// Linear time = O(n)
+// Constant time = O(1)
+
