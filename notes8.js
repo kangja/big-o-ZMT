@@ -54,4 +54,8 @@ findNemo(everyone)
 // running
 // Found NEMO!
 
-// 
+//After we put break, once we found "nemo", we're done! We're not going to loop through the rest of the items. We just made our code a little bit more efficient. 
+
+// Big o only cares about the worse case. What is the worse case here? The worse case is that Nemo, instead of being the 4th item, is at the end. So even if we have this break statement, we're still going to run 10 times because Nemo is at the end. The best case is when "Nemo" is at the very beginning and we only have to loop through it once. But, worse case we're still going to have to go through 10 loops. Still Big O(N)! 
+
+// This is our first rule. We always care about what is the worse case scenario because when we talk about scalability we can't just assume things are going well. Even though the function might be O(1) if "Nemo" is at the very first item in the array, it doesn't matter. In the grand scheme of things because we can't be certain of what the input is going to be, we're going to assume that it's BIG O is O(N), which is linear time. 
