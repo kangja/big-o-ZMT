@@ -227,8 +227,6 @@ function findNemo(array) {
 // Call to find nem took 451.6171290278435 miliseconds. It's pretty fast. 
 
 
-
-
 // Let's do One last one for fun!
 const large = new Array(100000).fill("nemo");
 
