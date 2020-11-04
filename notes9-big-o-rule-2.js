@@ -13,7 +13,16 @@ function printFirstItemThenFirstHalfThenSayHi100Times(items) {
     index++;
   }
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 100; i++) { //We're not looping over the "items" array. We just have 100 no matter how big the items array is. We are logging "hi" 100 times. This is always going to be 100. This is O(100). 
     console.log("hi");
   }
 }
+
+
+//BIG O of this function is O(1 + n/2 + 100). But, rule number 2 states that we DROP the constants. We are simply saying that we don't really care that this BIG O is O(n/2 + 101). In the interview, we only care about the things that we saw on the chart. Nothing specific like this. Therefore O(101) turns into O(1).
+
+// O(n / 2), although it's divided by half, in the grand scheme of things, we only are about when it scales, when the inputs are getting larger and larger. As n gets bigger and bigger, we don't care about adding an extra 100 because if n is a million, adding an extra 100 steps doesn't really matter. And same with dividng by 2. As n gets larger and larger, dividing 2 has a decreasingly significant affect. So we drop the constants like this so this becomes O(n + 1). 
+
+// Because 1 from O(n+1) is insignificant if n was a million, we can just drop it as well. This function just becomes O(n).  
+
+// What if we had another function that had O(a + 50) or O(a + 50000000000)? It doesn't really matter. We drop the constants. It's gonna be O(a). 
