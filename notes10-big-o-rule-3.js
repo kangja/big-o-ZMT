@@ -1,0 +1,1 @@
+// Rule #3: Different terms for inputs
